@@ -2,16 +2,34 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/assets/images/vite.svg" />
+		<link rel="icon" type="image/svg+xml" href="/assets/images/horoscopo.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/base/normalize.css" />
 		<link rel="stylesheet" href="css/base/base.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css" />
-		<title>Vite App</title>
+		<title>Horoscopo</title>
 	</head>
 	<body>
-		<h1>WEB WITH VITE</h1>
-		<!-- <img src="./assets/images/cute-cat.webp" alt="" /> -->
-		<script type="module" src="./js/index.js"></script>
+		<section id="formContainer" class="horoscopo__container">
+			<h1 class="tittle">Horóscopo Semanal</h1>
+			<div class="horoscopo__inputcontainer">
+				<form class="form" action="" id="form">
+					<input class="input" type="text" name="horoscopo" id="horoscopo" placeholder="Introduce tu signo">
+					<p class="error" id="error"></p>
+					<input class="button" type="submit" value="DESCUBRIR">
+				</form>
+			</div>
+		</section>
+		<section id="resultContainer" class="result__container hide">
+			<h1 class="tittle__result">Tu Horóscopo Semanal</h1>
+			<div class="horoscopo__inputcontainer">
+				<p id="resulttext" class="horoscopotext"></p>
+			</div>
+			<button id="restart" class="button__result">Volver a Inicio</button>
+		</section>
+		<script  type="module" src="./js/index.js"></script>
 	</body>
 </html>
